@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthSync Thailand - Unified Health Information Exchange</title>
+  
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Google Fonts: Sarabun & Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Sarabun:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#header">
+        <i class="bi bi-heart-pulse-fill text-primary fs-3"></i>
+        <span>Health<span class="text-primary">Sync</span> Thailand</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="สลับแถบเมนู">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
+          <li class="nav-item">
+            <a class="nav-link active" href="#header">หน้าแรก (Home)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">จุดเด่น (Features)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">แพ็กเกจราคา (Pricing)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#social">ติดต่อเรา (Contact)</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-outline-primary text-white border-primary px-3 rounded-pill" href="about.html">
+              <i class="bi bi-people-fill me-1"></i> ทีมงาน (Team Members)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HEADER (TITLE & HERO) ================= -->
+  <!-- กฎข้อบังคับ: Desktop = 2 Rows / อื่นๆ = 1 Row -->
+  <header id="header" class="hero-section py-5 bg-light border-bottom">
+    <div class="container py-lg-4">
+      
+      <!-- DESKTOP VIEW: 2 ROWS (d-none d-lg-block) -->
+      <div class="d-none d-lg-block">
+        <!-- Row 1: หัวข้อ สโลแกน และ Value Proposition เต็มความกว้าง -->
+        <div class="row text-center mb-5">
+          <div class="col-lg-10 mx-auto">
+            <span class="badge bg-primary-subtle text-primary border border-primary px-3 py-2 rounded-pill mb-3">
+              <i class="bi bi-shield-check me-1"></i> มาตรฐานความปลอดภัยระดับสากล HL7 FHIR & PDPA Compliant
+            </span>
+            <h1 class="display-5 fw-bold text-dark mt-2 mb-3">
+              เชื่อมโยงระบบสุขภาพทั้งประเทศ <br><span class="text-primary">ปลดล็อกการส่งต่อข้อมูลเวชระเบียนแบบเรียลไทม์</span>
+            </h1>
+            <p class="lead text-muted px-lg-5">
+              แพลตฟอร์มบูรณาการข้อมูลสุขภาพแห่งชาติ เชื่อมต่อโรงพยาบาลศูนย์ โรงพยาบาลทั่วไป และคลินิกเวชกรรมเข้าด้วยกัน 
+              ลดต้นทุนตรวจซ้ำซ้อน พร้อมระบบ Patient Portal ที่ผู้ป่วยเข้าถึงผลตรวจได้จากมือถือ
+            </p>
+          </div>
+        </div>
+
+        <!-- Row 2: ปุ่ม Call To Action ขนานกับรูปจำลองระบบ -->
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="pe-lg-4">
+              <h3 class="fw-bold mb-3 text-secondary">พร้อมใช้งานทั้งระดับโรงพยาบาลใหญ่และคลินิก</h3>
+              <p class="text-secondary mb-4">
+                ไม่ต้องรื้อถอนระบบ HIS เดิม เชื่อมต่อผ่าน Open API ที่ปลอดภัย และเริ่มใช้งานโมเดล Cloud EMR สำหรับคลินิกได้ทันที
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#pricing" class="btn btn-primary btn-lg rounded-pill px-4 shadow">
+                  <i class="bi bi-building-check me-2"></i>สำหรับผู้บริหารโรงพยาบาล
+                </a>
+                <a href="#pricing" class="btn btn-outline-dark btn-lg rounded-pill px-4">
+                  <i class="bi bi-shop me-2"></i>สำหรับคลินิกเวชกรรม
+                </a>
+              </div>
+              <div class="mt-4 pt-2 d-flex gap-4 text-muted small">
+                <span><i class="bi bi-check-circle-fill text-success me-1"></i> เชื่อมต่อ HOSxP & HOMC</span>
+                <span><i class="bi bi-check-circle-fill text-success me-1"></i> Zero-Downtime</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image-wrapper p-3 bg-white rounded-4 shadow border text-center">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="HealthSync Hospital System Dashboard" class="img-fluid rounded-3 mb-2">
+              <small class="text-muted fst-italic">ระบบภาพรวมเวชระเบียนกลางแบบ Real-time และแอปพลิเคชันสำหรับผู้ป่วย</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE & TABLET VIEW: 1 ROW (d-block d-lg-none) -->
+      <div class="d-block d-lg-none">
+        <div class="row align-items-center gy-4 text-center">
+          <div class="col-12">
+            <span class="badge bg-primary-subtle text-primary border border-primary px-3 py-2 rounded-pill mb-2">
+              HL7 FHIR & PDPA Ready
+            </span>
+            <h1 class="h2 fw-bold text-dark mt-2 mb-3">
+              เชื่อมโยงระบบสุขภาพทั้งประเทศ <br><span class="text-primary">ส่งต่อประวัติการรักษาแบบเรียลไทม์</span>
+            </h1>
+            <p class="text-muted small mb-4">
+              ระบบกลางสำหรับโรงพยาบาล และระบบ Cloud EMR ราคาเข้าถึงได้สำหรับคลินิกขนาดเล็ก พร้อมแอปพลิเคชันดูผลตรวจสำหรับประชาชน
+            </p>
+            <div class="hero-image-wrapper p-2 bg-white rounded-3 shadow-sm border mb-4">
+              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="HealthSync System" class="img-fluid rounded-2">
+            </div>
+            <div class="d-grid gap-2">
+              <a href="#pricing" class="btn btn-primary rounded-pill py-2">
+                <i class="bi bi-calendar-check me-2"></i>นัดหมายสาธิตระบบ
+              </a>
+              <a href="about.html" class="btn btn-outline-secondary rounded-pill py-2">
+                <i class="bi bi-people me-2"></i>ทำความรู้จักทีมงาน
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= FEATURES SECTION ================= -->
+  <!-- กฎข้อบังคับ: แนวนอน 3 คอลัมน์บนจอใหญ่ / แนวตั้ง 1 แถวเต็มพื้นที่บน Tablet & Mobile -->
+  <section id="features" class="py-5 bg-white">
+    <div class="container py-lg-4">
+      <div class="text-center mb-5">
+        <span class="text-primary fw-bold text-uppercase small">Core Capabilities</span>
+        <h2 class="display-6 fw-bold">จุดเด่นของ HealthSync Platform</h2>
+        <p class="text-muted mx-auto" style="max-width: 650px;">
+          ออกแบบสถาปัตยกรรมข้อมูลเพื่อตอบโจทย์เครือข่ายโรงพยาบาลขนาดใหญ่ คลินิกย่อย และบุคลากรทางการแพทย์อย่างแท้จริง
+        </p>
+      </div>
+
+      <!-- Bootstrap Grid: col-lg-4 (3 columns on desktop) / col-12 (1 column full width on tablet & mobile) -->
+      <div class="row g-4">
+        <!-- Feature 1 -->
+        <div class="col-12 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-4 feature-card rounded-4">
+            <div class="feature-icon bg-primary text-white rounded-3 d-inline-flex align-items-center justify-content-center mb-4">
+              <i class="bi bi-diagram-3-fill fs-3"></i>
+            </div>
+            <h4 class="fw-bold mb-3">1. Data Interoperability</h4>
+            <p class="text-muted leading-relaxed">
+              เชื่อมต่อประวัติการรักษา ยา แพ้ยา และผลแล็บข้ามโรงพยาบาลด้วยมาตรฐานสากล <strong>HL7 FHIR Release 4</strong> ทำงานร่วมกับ HIS เดิม (HOSxP, HOMC, SAP) ได้โดยไม่ต้องรื้อระบบเก่า
+            </p>
+            <ul class="list-unstyled text-muted small mt-auto pt-2">
+              <li class="mb-2"><i class="bi bi-check2 text-primary me-2"></i>ลดการตรวจทางห้องปฏิบัติการซ้ำซ้อน</li>
+              <li><i class="bi bi-check2 text-primary me-2"></i>ส่งตัวผู้ป่วย (Referral) รวดเร็วในคลิกเดียว</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="col-12 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-4 feature-card rounded-4">
+            <div class="feature-icon bg-success text-white rounded-3 d-inline-flex align-items-center justify-content-center mb-4">
+              <i class="bi bi-hospital fs-3"></i>
+            </div>
+            <h4 class="fw-bold mb-3">2. HealthSync Clinic Lite</h4>
+            <p class="text-muted leading-relaxed">
+              โซลูชันระบบเวชระเบียนคลาวด์ (Cloud EMR) สำเร็จรูปสำหรับ<strong>คลินิกขนาดเล็กและแพทย์เวชปฏิบัติทั่วไป</strong> ใช้งานผ่านเบราว์เซอร์หรือ iPad ได้ทันที ในราคาที่เข้าถึงได้จริง
+            </p>
+            <ul class="list-unstyled text-muted small mt-auto pt-2">
+              <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i>บันทึกประวัติ ออกใบสั่งยา พิมพ์ใบรับรอง</li>
+              <li><i class="bi bi-check2 text-success me-2"></i>ส่งประวัติเข้าเครือข่าย รพ. ศูนย์ได้ทันที</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="col-12 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm p-4 feature-card rounded-4">
+            <div class="feature-icon bg-info text-white rounded-3 d-inline-flex align-items-center justify-content-center mb-4">
+              <i class="bi bi-phone-fill fs-3"></i>
+            </div>
+            <h4 class="fw-bold mb-3">3. Personal Health Portal</h4>
+            <p class="text-muted leading-relaxed">
+              แอปพลิเคชันสำหรับประชาชนเสมือน <strong>MyChart</strong> เปิดให้ผู้ป่วยตรวจสอบผลตรวจเลือด ฟิล์มเอกซเรย์ นัดหมายแพทย์ และจัดการประวัติสุขภาพของตนเองได้อย่างปลอดภัย
+            </p>
+            <ul class="list-unstyled text-muted small mt-auto pt-2">
+              <li class="mb-2"><i class="bi bi-check2 text-info me-2"></i>แจ้งเตือนเวลาทานยาและประวัติแพ้ยา</li>
+              <li><i class="bi bi-check2 text-info me-2"></i>ระบบขอความยินยอม (Digital Consent) ตาม PDPA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ADDITIONAL SECTION: PRICE LIST ================= -->
+  <!-- Additional Section (20 คะแนน) เลือกทำ Price List สำหรับ B2B และ คลินิก -->
+  <section id="pricing" class="py-5 bg-light border-top border-bottom">
+    <div class="container py-lg-4">
+      <div class="text-center mb-5">
+        <span class="text-primary fw-bold text-uppercase small">Transparent Pricing</span>
+        <h2 class="display-6 fw-bold">แผนราคาที่ตอบโจทย์ตั้งแต่คลินิกจนถึงโรงพยาบาล</h2>
+        <p class="text-muted mx-auto" style="max-width: 600px;">
+          คลินิกเริ่มต้นได้ในราคาหลักร้อย ส่วนโรงพยาบาลขนาดใหญ่จ่ายตามสเกลการใช้งานจริง
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-stretch">
+        <!-- Tier 1: Solo Clinic -->
+        <div class="col-12 col-lg-4">
+          <div class="card h-100 rounded-4 border-0 shadow-sm p-4 bg-white d-flex flex-column">
+            <div class="mb-3">
+              <span class="badge bg-light text-dark border px-3 py-1 rounded-pill">สำหรับคลินิกแพทย์เดี่ยว</span>
+            </div>
+            <h3 class="fw-bold">Clinic Solo</h3>
+            <p class="text-muted small">เหมาะสำหรับคลินิกเวชปฏิบัติทั่วไป 1 ห้องตรวจ</p>
+            <div class="my-3">
+              <span class="display-6 fw-bold text-dark">฿990</span>
+              <span class="text-muted">/ เดือน</span>
+            </div>
+            <hr>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-4 text-muted small">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>เวชระเบียนคลาวด์ (Cloud EMR)</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>ระบบบันทึกอาการและจ่ายยาพื้นฐาน</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>ระบบคิวนัดหมายคนไข้</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>ส่งประวัติต่อเข้า รพ. ในเครือข่าย</li>
+              <li class="text-black-50 text-decoration-line-through"><i class="bi bi-x-circle me-2"></i>ระบบสต็อกยาหลายคลัง</li>
+            </ul>
+            <a href="#social" class="btn btn-outline-primary rounded-pill mt-auto w-100 py-2">เริ่มต้นใช้งานฟรี 14 วัน</a>
+          </div>
+        </div>
+
+        <!-- Tier 2: Multi-Specialty Clinic -->
+        <div class="col-12 col-lg-4">
+          <div class="card h-100 rounded-4 border-primary border-2 shadow p-4 bg-white d-flex flex-column position-relative">
+            <div class="position-absolute top-0 end-0 translate-middle-y me-4">
+              <span class="badge bg-primary px-3 py-2 rounded-pill shadow-sm">ยอดนิยมสำหรับคลินิก</span>
+            </div>
+            <div class="mb-3">
+              <span class="badge bg-primary-subtle text-primary px-3 py-1 rounded-pill">คลินิกหลายห้องตรวจ</span>
+            </div>
+            <h3 class="fw-bold">Clinic Multi</h3>
+            <p class="text-muted small">สำหรับคลินิกเฉพาะทางหรือศูนย์แพทย์ 2-5 ห้องตรวจ</p>
+            <div class="my-3">
+              <span class="display-6 fw-bold text-primary">฿2,490</span>
+              <span class="text-muted">/ เดือน</span>
+            </div>
+            <hr>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-4 text-muted small">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>ทุกฟีเจอร์ในแพ็กเกจ Solo</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>รองรับแพทย์ 5 ท่าน พร้อมระบบสิทธิ์แยกกะ</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>ระบบจัดการคลังยาและแจ้งเตือนยาหมดอายุ</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>สรุปรายงานรายรับประจำวันและภาษี</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>เชื่อมต่อเครื่องสแกนบาร์โค้ดยา</li>
+            </ul>
+            <a href="#social" class="btn btn-primary rounded-pill mt-auto w-100 py-2 shadow-sm">เลือกแพ็กเกจนี้</a>
+          </div>
+        </div>
+
+        <!-- Tier 3: Hospital Enterprise -->
+        <div class="col-12 col-lg-4">
+          <div class="card h-100 rounded-4 border-0 shadow-sm p-4 bg-white d-flex flex-column">
+            <div class="mb-3">
+              <span class="badge bg-dark text-white px-3 py-1 rounded-pill">โรงพยาบาล & เครือข่าย</span>
+            </div>
+            <h3 class="fw-bold">Hospital Core</h3>
+            <p class="text-muted small">เครือข่ายโรงพยาบาลทั่วไป และโรงพยาบาลศูนย์</p>
+            <div class="my-3">
+              <span class="h2 fw-bold text-dark">Custom</span>
+              <span class="text-muted">/ ตามสเกลเตียง</span>
+            </div>
+            <hr>
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-4 text-muted small">
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>เชื่อมต่อ Legacy HIS 100% (HOSxP, HOMC ฯลฯ)</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>Full HL7 FHIR Middleware Data Exchange</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>แอปพลิเคชัน MyChart White-label แบรนด์ รพ.</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>ระบบส่งเวร Handover ดิจิทัลสำหรับพยาบาล</li>
+              <li><i class="bi bi-check-circle-fill text-success me-2"></i>SLA ดูแลระบบ 24/7 พร้อมทีม On-site</li>
+            </ul>
+            <a href="#social" class="btn btn-outline-dark rounded-pill mt-auto w-100 py-2">นัดหมายปรึกษาผู้เชี่ยวชาญ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SOCIAL LINK & CONTACT SECTION ================= -->
+  <!-- กฎข้อบังคับ: Social Links ท้ายสุด + ลิงก์ไปยัง PIM + ข้อความเชิญชวน -->
+  <footer id="social" class="bg-dark text-white py-5">
+    <div class="container py-lg-3">
+      <div class="row g-4 align-items-center">
+        <!-- Brand & Description -->
+        <div class="col-12 col-lg-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <i class="bi bi-heart-pulse-fill text-primary fs-3"></i>
+            <h4 class="fw-bold mb-0 text-white">HealthSync Thailand</h4>
+          </div>
+          <p class="text-secondary mb-3">
+            โครงสร้างพื้นฐานด้านข้อมูลสุขภาพเพื่อยกระดับวงการสาธารณสุขไทย <br>
+            พัฒนาขึ้นเพื่อการวิจัยและส่งเสริมเทคโนโลยีการแพทย์ในยุคดิจิทัล
+          </p>
+          <div class="d-flex gap-2 text-secondary small">
+            <span><i class="bi bi-shield-lock-fill text-success"></i> ISO 27001 Ready</span> • 
+            <span><i class="bi bi-patch-check-fill text-info"></i> HL7 FHIR Accredited</span> • 
+            <span><i class="bi bi-file-earmark-medical-fill text-warning"></i> PDPA 100%</span>
+          </div>
+        </div>
+
+        <!-- Social Media Links & Institutional Link -->
+        <div class="col-12 col-lg-6 text-lg-end">
+          <h5 class="fw-bold mb-2">ติดตามข่าวสารและการอัปเดตระบบ</h5>
+          <p class="text-secondary small mb-3">ติดตามความเคลื่อนไหวเทคโนโลยี HealthTech ได้ผ่านช่องทางโซเชียลมีเดียของเรา</p>
+          
+          <!-- Social Icons -->
+          <div class="d-flex gap-3 justify-content-lg-end mb-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn btn btn-outline-light rounded-circle" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener" class="social-btn btn btn-outline-light rounded-circle" aria-label="X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn btn btn-outline-light rounded-circle" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-btn btn btn-outline-light rounded-circle" aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+
+          <!-- Academic Affiliation Link to PIM -->
+          <div class="text-secondary small">
+            โครงการพัฒนาภายใต้ความร่วมมือและส่งเสริมการเรียนรู้: 
+            <a href="https://www.pim.ac.th" target="_blank" rel="noopener" class="text-primary text-decoration-none fw-semibold">
+              สถาบันการจัดการปัญญาภิวัฒน์ (PIM) <i class="bi bi-box-arrow-up-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+      <div class="text-center text-secondary small">
+        &copy; 2026 HealthSync Thailand Co., Ltd. All rights reserved. | Group Project 1 (GP1)
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
